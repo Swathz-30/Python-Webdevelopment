@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <title>Index Page</title>
+
+    <head>
+        <style>
+            .myDiv 
+            {
+                border: 5px outset black;
+                background-color: rgb(173, 230, 209);
+                text-align: center;
+            }
+            p.a 
+            {
+                font-family: "Times New Roman", Times, serif;
+            }
+            p.b 
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="myDiv">
+            <h1 class ="a">RAJAGIRI SCHOOL OF ENGINEERING AND TECHNOLOGY</h1>
+            <p>PYTHON-WEBDEVELOPMENT</p> 
+            <!-- {{message}} -->
+            <a href="/contact">Contact </a> 
+            <a href="{% url 'login' %}">Login</a>
+           
+        </div>
+        {% load static %}
+        <img src="{% static 'my_app/picture.jpg' %}" alt="My image">
+    </body>
+
+</html>
